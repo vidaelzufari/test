@@ -1,0 +1,66 @@
+# Fires automatically when a release tag (v1.2.3, v1.2.3-rc.1, ...) is pushed.
+# Runs the unit test suite, builds both platforms from the `production` build
+# profile, then ships those exact builds to TestFlight and the Google Play
+# "internal testing" track ONLY. It never touches a public store track — see
+# release-production.yml for that, which is deliberately manual-only.
+#
+# EAS Workflows syntax reference (verify field names here against the current
+# docs before relying on this in a real pipeline — the feature is young and
+# evolves quickly): https://docs.expo.dev/eas/workflows/syntax/
+name: Release to internal testing (TestFlight + Play internal)
+
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  test:
+    name: Lint, typecheck, unit tests
+    type: custom
+    steps:
+      - uses: eas/checkout
+      - uses: eas/install_node_modules
+      - run:
+          name: Typecheck
+          command: npm run typecheck
+      - run:
+          name: Lint
+          command: npm run lint
+      - run:
+          name: Unit tests (recommendations engine, stash forecast, date math)
+          command: npm run test -- --ci --coverage
+
+  build_ios:
+    name: Build iOS (production profile)
+    type: build
+    needs: [test]
+    params:
+      platform: ios
+      profile: production
+
+  build_android:
+    name: Build Android (production profile)
+    type: build
+    needs: [test]
+    params:
+      platform: android
+      profile: production
+
+  submit_ios_testflight:
+    name: Submit iOS to TestFlight
+    type: submit
+    needs: [build_ios]
+    params:
+      platform: ios
+      profile: internal
+      build_id: ${{ needs.build_ios.outputs.build_id }}
+
+  submit_android_internal:
+    name: Submit Android to Play internal testing track
+    type: submit
+    needs: [build_android]
+    params:
+      platform: android
+      profile: internal
+      build_id: ${{ needs.build_android.outputs.build_id }}

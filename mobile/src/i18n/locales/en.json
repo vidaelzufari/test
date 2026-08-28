@@ -1,0 +1,171 @@
+{
+  "nav": {
+    "home": "Home",
+    "history": "History",
+    "settings": "Settings"
+  },
+  "common": {
+    "appName": "The Nursing Queen",
+    "cancel": "Cancel",
+    "save": "Save",
+    "done": "Done",
+    "delete": "Delete",
+    "edit": "Edit",
+    "add": "Add",
+    "skip": "Skip for now",
+    "back": "Back",
+    "ml": "ml",
+    "oz": "oz",
+    "minutesShort": "{{count}}m",
+    "hoursMinutesShort": "{{hours}}h {{minutes}}m",
+    "hoursShort": "{{count}}h"
+  },
+  "home": {
+    "greeting": "Hello, Queen",
+    "startedNursing": "Started Nursing",
+    "stoppedNursing": "Stopped Nursing",
+    "nursingActive": "Nursing…",
+    "nursingActiveSub": "Tap to stop",
+    "pumped": "Pumped",
+    "bottle": "Bottle",
+    "logCompletedSession": "Log a completed session",
+    "chooseDuration": "How long was that feed?",
+    "durationPreset": "{{minutes}} min",
+    "customDuration": "Custom",
+    "whichSide": "Which side?",
+    "sideLeft": "Left",
+    "sideRight": "Right",
+    "sideBoth": "Both",
+    "sideSkip": "Skip"
+  },
+  "statusStrip": {
+    "lastFeed": "Last feed",
+    "lastFeedNever": "No feeds logged yet",
+    "lastSide": "Last side",
+    "sideUnknown": "—",
+    "todayFeeds": "Today's feeds",
+    "todayPump": "Pumped today",
+    "todayBottle": "Bottle today",
+    "currentStash": "Stash on hand"
+  },
+  "pumpDetail": {
+    "title": "Add pump details",
+    "subtitle": "Optional — you can always fill this in later from History.",
+    "leftMl": "Left ({{unit}})",
+    "rightMl": "Right ({{unit}})",
+    "total": "Total: {{amount}}",
+    "dismiss": "Not now",
+    "save": "Save details"
+  },
+  "bottleEntry": {
+    "title": "Bottle",
+    "amount": "Amount",
+    "milkType": "What's in the bottle?",
+    "milkTypeBreastMilk": "Breast milk",
+    "milkTypeFormula": "Formula",
+    "fromStash": "From stash",
+    "save": "Save bottle",
+    "skipAmount": "Save without amount"
+  },
+  "history": {
+    "title": "History",
+    "empty": "Nothing logged yet today.",
+    "needsMl": "+ add ml",
+    "nursingTitle": "Nursing",
+    "nursingTitleWithSide": "Nursing · {{side}}",
+    "pumpTitle": "Pumping session",
+    "bottleTitleBreastMilk": "Bottle · breast milk",
+    "bottleTitleFormula": "Bottle · formula",
+    "editEntry": "Edit entry",
+    "deleteEntry": "Delete entry",
+    "deleteConfirmTitle": "Delete this entry?",
+    "deleteConfirmBody": "This can't be undone."
+  },
+  "profile": {
+    "title": "Baby Profile",
+    "addBaby": "Add a baby",
+    "switchBaby": "Switch baby",
+    "name": "Name",
+    "dateOfBirth": "Date of birth",
+    "age": {
+      "weeks_one": "{{count}} week old",
+      "weeks_other": "{{count}} weeks old",
+      "months_one": "{{count}} month old",
+      "months_other": "{{count}} months old"
+    },
+    "photo": "Photo",
+    "choosePhoto": "Choose from library",
+    "takePhoto": "Take a photo",
+    "weight": "Weight",
+    "addWeight": "Add a weight entry",
+    "weightEmpty": "No weight entries yet.",
+    "privacyNote": "This profile stays on this device only."
+  },
+  "settings": {
+    "title": "Settings",
+    "appearance": "Appearance",
+    "themeSystem": "Match device",
+    "themeLight": "Light",
+    "themeDark": "Dark",
+    "themeNight": "Night (extra dim)",
+    "units": "Units",
+    "unitsMl": "Milliliters (ml)",
+    "unitsOz": "Ounces (oz)",
+    "language": "Language",
+    "languageSystem": "Match device",
+    "returnToWork": "Return-to-work date",
+    "returnToWorkNote": "Used only for gentle pump-and-stash guidance.",
+    "targetStash": "Stash goal ({{unit}})",
+    "queenUnlock": "Queen Unlock",
+    "queenUnlockOwned": "Unlocked — thank you!",
+    "restorePurchases": "Restore purchases",
+    "about": "About",
+    "version": "Version {{version}}"
+  },
+  "recommendations": {
+    "title": "Queen's Advisor",
+    "disclaimer": "General guidance based on your own logs, not medical advice.",
+    "unlockPrompt": "Unlock Queen recommendations and stash forecasting.",
+    "unlockCta": "Unlock The Queen",
+    "nextFeed": {
+      "titleWithName": "{{name}} usually feeds around now",
+      "titleGeneric": "A feed is usually due around now",
+      "body": "Based on recent feeds, expect one between {{earliest}} and {{latest}}.",
+      "bodyNoData": "Once you've logged a few feeds, this will follow {{name}}'s own rhythm."
+    },
+    "pumpSuggestion": {
+      "titleGap": "A good window to pump",
+      "bodyGap": "There's usually a longer stretch between feeds around {{time}}.",
+      "titleMorning": "Morning surplus",
+      "bodyMorning": "You tend to pump more around {{time}} — worth a session then.",
+      "titleStashGoal": "Building your stash",
+      "bodyStashGoal": "About {{amount}} more would round out your stash goal before {{date}}."
+    },
+    "stash": {
+      "title": "Stock I have",
+      "coverage": "About {{days}} days of coverage at {{name}}'s usual intake",
+      "coverageUnknown": "Log a few more feeds to estimate coverage",
+      "useNext": "Use this one next — it's the oldest",
+      "expiringSoon": "Expiring soon",
+      "expired": "Past guidance window",
+      "reasonFridge": "Fridge guidance: use within 4 days",
+      "reasonFreezerBest": "Freezer guidance: best within 6 months, acceptable up to 12",
+      "reasonFreezerAcceptable": "Freezer guidance: past the 12-month acceptable window",
+      "reasonThawed": "Thawed guidance: use within 24 hours, never refreeze",
+      "reasonCounter": "Room-temperature guidance: use within 4 hours",
+      "storageNote": "General storage guidance (CDC-based); local guidance may vary."
+    }
+  },
+  "paywall": {
+    "title": "Unlock The Queen",
+    "subtitle": "The four-button logger, history, and profile are free forever. Queen Unlock adds gentle, personalized recommendations and stash forecasting.",
+    "priceNote": "One-time purchase, yours for life.",
+    "purchase": "Unlock now",
+    "restore": "Restore purchases",
+    "notNow": "Not now"
+  },
+  "permissions": {
+    "photoLibrary": "The Nursing Queen stores your baby's photo only on this device, to show it on their profile.",
+    "camera": "The Nursing Queen uses the camera only if you choose to take a new photo for your baby's profile."
+  }
+}

@@ -1,0 +1,23 @@
+# User story: log nursing — start a nursing session from Home, stop it, and
+# confirm the completed session shows up in History.
+appId: com.nursingqueen.app
+---
+- launchApp
+- assertVisible:
+    id: "home-button-start-nursing"
+- tapOn:
+    id: "home-button-start-nursing"
+- assertVisible:
+    id: "home-button-stop-nursing"
+- extendedWaitUntil:
+    visible:
+      id: "home-button-stop-nursing"
+    timeout: 3000
+- tapOn:
+    id: "home-button-stop-nursing"
+- assertVisible:
+    id: "home-button-start-nursing"
+- tapOn:
+    id: "nav-history"
+- assertVisible:
+    id: "history-entry-row-0"

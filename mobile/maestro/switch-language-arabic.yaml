@@ -1,0 +1,33 @@
+# User story: switch language to Arabic — change the app language to Arabic
+# from Settings and confirm the RTL relayout keeps the home buttons and
+# navigation tappable.
+appId: com.nursingqueen.app
+---
+- launchApp
+- tapOn:
+    id: "nav-settings"
+- tapOn:
+    id: "settings-language-option-ar"
+- assertVisible:
+    id: "home-button-pump"
+- assertVisible:
+    id: "home-button-bottle"
+- tapOn:
+    id: "home-button-pump"
+- tapOn:
+    id: "pump-detail-dismiss"
+- tapOn:
+    id: "home-button-bottle"
+- assertVisible:
+    id: "bottle-entry-amount-input"
+- tapOn:
+    id: "bottle-entry-amount-input"
+- inputText: "60"
+- tapOn:
+    id: "bottle-entry-type-breast-milk"
+- tapOn:
+    id: "bottle-entry-save"
+- tapOn:
+    id: "nav-history"
+- assertVisible:
+    id: "history-entry-row-0"

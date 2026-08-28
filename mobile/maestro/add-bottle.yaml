@@ -1,0 +1,20 @@
+# User story: add bottle — log a bottle feed with an amount and milk type,
+# then confirm it appears in History.
+appId: com.nursingqueen.app
+---
+- launchApp
+- tapOn:
+    id: "home-button-bottle"
+- assertVisible:
+    id: "bottle-entry-amount-input"
+- tapOn:
+    id: "bottle-entry-amount-input"
+- inputText: "120"
+- tapOn:
+    id: "bottle-entry-type-breast-milk"
+- tapOn:
+    id: "bottle-entry-save"
+- tapOn:
+    id: "nav-history"
+- assertVisible:
+    id: "history-entry-row-0"

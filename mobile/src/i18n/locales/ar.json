@@ -1,0 +1,179 @@
+{
+  "nav": {
+    "home": "الرئيسية",
+    "history": "السجل",
+    "settings": "الإعدادات"
+  },
+  "common": {
+    "appName": "The Nursing Queen",
+    "cancel": "إلغاء",
+    "save": "حفظ",
+    "done": "تم",
+    "delete": "حذف",
+    "edit": "تعديل",
+    "add": "إضافة",
+    "skip": "ليس الآن",
+    "back": "رجوع",
+    "ml": "مل",
+    "oz": "أونصة",
+    "minutesShort": "{{count}} د",
+    "hoursMinutesShort": "{{hours}} س {{minutes}} د",
+    "hoursShort": "{{count}} س"
+  },
+  "home": {
+    "greeting": "أهلاً بكِ أيتها الملكة",
+    "startedNursing": "بدأت الرضاعة",
+    "stoppedNursing": "انتهت الرضاعة",
+    "nursingActive": "الرضاعة جارية…",
+    "nursingActiveSub": "اضغطي للإيقاف",
+    "pumped": "شفط",
+    "bottle": "رضّاعة",
+    "logCompletedSession": "تسجيل جلسة منتهية بالفعل",
+    "chooseDuration": "كم استغرقت هذه الرضعة؟",
+    "durationPreset": "{{minutes}} د",
+    "customDuration": "مخصص",
+    "whichSide": "أي جانب؟",
+    "sideLeft": "الأيسر",
+    "sideRight": "الأيمن",
+    "sideBoth": "كلاهما",
+    "sideSkip": "تخطي"
+  },
+  "statusStrip": {
+    "lastFeed": "آخر رضعة",
+    "lastFeedNever": "لم تُسجَّل أي رضعة بعد",
+    "lastSide": "آخر جانب",
+    "sideUnknown": "—",
+    "todayFeeds": "رضعات اليوم",
+    "todayPump": "الشفط اليوم",
+    "todayBottle": "الرضّاعة اليوم",
+    "currentStash": "المخزون المتوفر"
+  },
+  "pumpDetail": {
+    "title": "إضافة تفاصيل الشفط",
+    "subtitle": "اختياري — يمكنك دائمًا إضافته لاحقًا من السجل.",
+    "leftMl": "الأيسر ({{unit}})",
+    "rightMl": "الأيمن ({{unit}})",
+    "total": "الإجمالي: {{amount}}",
+    "dismiss": "ليس الآن",
+    "save": "حفظ التفاصيل"
+  },
+  "bottleEntry": {
+    "title": "رضّاعة",
+    "amount": "الكمية",
+    "milkType": "ما الذي في الرضّاعة؟",
+    "milkTypeBreastMilk": "حليب الأم",
+    "milkTypeFormula": "حليب صناعي",
+    "fromStash": "من المخزون",
+    "save": "حفظ الرضّاعة",
+    "skipAmount": "حفظ بدون تحديد الكمية"
+  },
+  "history": {
+    "title": "السجل",
+    "empty": "لا شيء مسجَّل اليوم بعد.",
+    "needsMl": "+ إضافة مل",
+    "nursingTitle": "رضاعة",
+    "nursingTitleWithSide": "رضاعة · {{side}}",
+    "pumpTitle": "جلسة شفط",
+    "bottleTitleBreastMilk": "رضّاعة · حليب الأم",
+    "bottleTitleFormula": "رضّاعة · حليب صناعي",
+    "editEntry": "تعديل المدخل",
+    "deleteEntry": "حذف المدخل",
+    "deleteConfirmTitle": "هل تريدين حذف هذا المدخل؟",
+    "deleteConfirmBody": "لا يمكن التراجع عن هذا الإجراء."
+  },
+  "profile": {
+    "title": "ملف الطفل",
+    "addBaby": "إضافة طفل",
+    "switchBaby": "تبديل الطفل",
+    "name": "الاسم",
+    "dateOfBirth": "تاريخ الميلاد",
+    "age": {
+      "weeks_zero": "بعمر أقل من أسبوع",
+      "weeks_one": "بعمر أسبوع واحد",
+      "weeks_two": "بعمر أسبوعين",
+      "weeks_few": "بعمر {{count}} أسابيع",
+      "weeks_many": "بعمر {{count}} أسبوعًا",
+      "weeks_other": "بعمر {{count}} أسبوع",
+      "months_zero": "بعمر أقل من شهر",
+      "months_one": "بعمر شهر واحد",
+      "months_two": "بعمر شهرين",
+      "months_few": "بعمر {{count}} أشهر",
+      "months_many": "بعمر {{count}} شهرًا",
+      "months_other": "بعمر {{count}} شهر"
+    },
+    "photo": "الصورة",
+    "choosePhoto": "اختيار من المكتبة",
+    "takePhoto": "التقاط صورة",
+    "weight": "الوزن",
+    "addWeight": "إضافة قياس وزن",
+    "weightEmpty": "لا توجد قياسات وزن بعد.",
+    "privacyNote": "يبقى هذا الملف على هذا الجهاز فقط."
+  },
+  "settings": {
+    "title": "الإعدادات",
+    "appearance": "المظهر",
+    "themeSystem": "حسب الجهاز",
+    "themeLight": "فاتح",
+    "themeDark": "داكن",
+    "themeNight": "ليلي (خافت جدًا)",
+    "units": "الوحدات",
+    "unitsMl": "مليلتر (مل)",
+    "unitsOz": "أونصة (oz)",
+    "language": "اللغة",
+    "languageSystem": "حسب الجهاز",
+    "returnToWork": "تاريخ العودة إلى العمل",
+    "returnToWorkNote": "تُستخدم فقط لتقديم إرشادات لطيفة حول الشفط وتخزين الحليب.",
+    "targetStash": "هدف المخزون ({{unit}})",
+    "queenUnlock": "Queen Unlock",
+    "queenUnlockOwned": "تم الفتح — شكرًا لكِ!",
+    "restorePurchases": "استعادة المشتريات",
+    "about": "حول التطبيق",
+    "version": "الإصدار {{version}}"
+  },
+  "recommendations": {
+    "title": "مستشارة الملكة",
+    "disclaimer": "إرشادات عامة استنادًا إلى بياناتك المسجَّلة، وليست استشارة طبية.",
+    "unlockPrompt": "افتحي نصائح الملكة وتوقعات المخزون.",
+    "unlockCta": "افتحي مزايا الملكة",
+    "nextFeed": {
+      "titleWithName": "عادةً ما يحين وقت رضعة {{name}} في مثل هذا الوقت",
+      "titleGeneric": "عادةً ما يحين وقت الرضعة في مثل هذا الوقت",
+      "body": "استنادًا إلى الرضعات الأخيرة، يمكن توقع رضعة بين {{earliest}} و{{latest}}.",
+      "bodyNoData": "بمجرد أن تسجّلي بضع رضعات، سيتبع هذا إيقاع {{name}} الخاص."
+    },
+    "pumpSuggestion": {
+      "titleGap": "وقت جيد للشفط",
+      "bodyGap": "عادةً ما تكون هناك فترة أطول بين الرضعات حوالي الساعة {{time}}.",
+      "titleMorning": "فائض صباحي",
+      "bodyMorning": "تميلين إلى شفط كمية أكبر حوالي الساعة {{time}} — يستحق تجربة جلسة حينها.",
+      "titleStashGoal": "بناء مخزونك",
+      "bodyStashGoal": "سيساعد شفط حوالي {{amount}} إضافية على إكمال هدف مخزونك قبل {{date}}."
+    },
+    "stash": {
+      "title": "ما لديّ من مخزون",
+      "coverage": "حوالي {{days}} أيام من التغطية وفق معدل استهلاك {{name}} المعتاد",
+      "coverageUnknown": "سجّلي بضع رضعات أخرى لتقدير مدة التغطية",
+      "useNext": "استخدمي هذا التالي — فهو الأقدم",
+      "expiringSoon": "قريب الانتهاء",
+      "expired": "تجاوز فترة الإرشادات الموصى بها",
+      "reasonFridge": "إرشادات الثلاجة: يُستخدم خلال 4 أيام",
+      "reasonFreezerBest": "إرشادات الفريزر: الأفضل خلال 6 أشهر، ومقبول حتى 12 شهرًا",
+      "reasonFreezerAcceptable": "إرشادات الفريزر: تجاوز فترة الـ12 شهرًا المقبولة",
+      "reasonThawed": "إرشادات الحليب المذاب: يُستخدم خلال 24 ساعة، ولا يُعاد تجميده أبدًا",
+      "reasonCounter": "إرشادات درجة حرارة الغرفة: يُستخدم خلال 4 ساعات",
+      "storageNote": "إرشادات تخزين عامة (استنادًا إلى مركز السيطرة على الأمراض CDC)؛ قد تختلف الإرشادات المحلية."
+    }
+  },
+  "paywall": {
+    "title": "افتحي مزايا الملكة",
+    "subtitle": "المسجّل الرباعي الأزرار والسجل والملف الشخصي مجانية إلى الأبد. تضيف Queen Unlock نصائح شخصية لطيفة وتوقعات للمخزون.",
+    "priceNote": "شراء لمرة واحدة، يبقى معك مدى الحياة.",
+    "purchase": "افتحي الآن",
+    "restore": "استعادة المشتريات",
+    "notNow": "ليس الآن"
+  },
+  "permissions": {
+    "photoLibrary": "يحفظ The Nursing Queen صورة طفلك على هذا الجهاز فقط، لعرضها في ملفه الشخصي.",
+    "camera": "يستخدم The Nursing Queen الكاميرا فقط إذا اخترتِ التقاط صورة جديدة لملف طفلك الشخصي."
+  }
+}

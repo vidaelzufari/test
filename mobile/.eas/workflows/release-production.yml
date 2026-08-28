@@ -1,0 +1,48 @@
+# Deliberately has NO `on:` trigger — EAS Workflows only auto-fire for
+# triggers declared here (push/schedule), so with none declared this file
+# can only ever be started by an explicit human action:
+#   eas workflow:run .eas/workflows/release-production.yml \
+#     --input build_id_ios=<ios build id from the internal release> \
+#     --input build_id_android=<android build id from the internal release>
+# (or via "Run workflow" in the EAS dashboard, once this repo is connected
+# there). That manual invocation, naming the exact already-tested build IDs
+# to promote, IS the required approval gate for a public release — this
+# workflow never builds from source itself, it only promotes a build that
+# already shipped to TestFlight/Play-internal via release-internal.yml, so
+# what testers verified is byte-for-byte what goes public.
+#
+# Android: eas.json's "production" submit profile sets releaseStatus:
+# "draft", so even this step does not go live on the Play Store — it lands
+# as a draft release you still have to press "Publish" on in Play Console.
+# iOS: `eas submit` only uploads the build to App Store Connect; taking a
+# TestFlight build public still requires you to submit that version for
+# review / release it from App Store Connect — a second, independent human
+# step Apple itself enforces.
+name: Promote a tested build to public production
+
+on: {}
+
+inputs:
+  build_id_ios:
+    type: string
+    required: true
+  build_id_android:
+    type: string
+    required: true
+
+jobs:
+  submit_ios_production:
+    name: Submit iOS build to App Store Connect (for release review)
+    type: submit
+    params:
+      platform: ios
+      profile: production
+      build_id: ${{ inputs.build_id_ios }}
+
+  submit_android_production:
+    name: Submit Android build to Play production track (as draft)
+    type: submit
+    params:
+      platform: android
+      profile: production
+      build_id: ${{ inputs.build_id_android }}

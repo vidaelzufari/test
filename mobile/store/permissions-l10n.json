@@ -1,0 +1,14 @@
+{
+  "en": {
+    "NSPhotoLibraryUsageDescription": "The Nursing Queen stores your baby's photo only on this device, to show it on their profile.",
+    "NSCameraUsageDescription": "The Nursing Queen uses the camera only if you choose to take a new photo for your baby's profile."
+  },
+  "fr": {
+    "NSPhotoLibraryUsageDescription": "The Nursing Queen conserve la photo de votre bébé uniquement sur cet appareil, pour l'afficher sur son profil.",
+    "NSCameraUsageDescription": "The Nursing Queen n'utilise l'appareil photo que si vous choisissez de prendre une nouvelle photo pour le profil de votre bébé."
+  },
+  "ar": {
+    "NSPhotoLibraryUsageDescription": "يحفظ The Nursing Queen صورة طفلك على هذا الجهاز فقط، لعرضها في ملفه الشخصي.",
+    "NSCameraUsageDescription": "يستخدم The Nursing Queen الكاميرا فقط إذا اخترتِ التقاط صورة جديدة لملف طفلك الشخصي."
+  }
+}

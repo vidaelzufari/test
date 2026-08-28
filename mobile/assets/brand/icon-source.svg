@@ -1,0 +1,25 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <!--
+    Single source of truth for every app icon / splash asset. Run
+    `npm run generate:icons` (scripts/generate-icons.js) to rasterize this
+    into assets/icon.png, assets/adaptive-icon-foreground.png,
+    assets/splash.png and assets/favicon.png — never hand-edit the PNGs.
+  -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1024" y2="1024" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FBF7F4" />
+      <stop offset="1" stop-color="#F3E6DA" />
+    </linearGradient>
+  </defs>
+  <rect width="1024" height="1024" rx="228" fill="url(#bg)" />
+  <g transform="translate(512 512)">
+    <!-- Minimal geometric crown mark — the app's identity motif -->
+    <g transform="translate(-220 -140)">
+      <path
+        d="M0 130L120 210L220 30L320 210L440 130V330C440 353 421 372 398 372H42C19 372 0 353 0 330V130Z"
+        fill="#C9A15A"
+      />
+      <rect x="0" y="392" width="440" height="26" rx="13" fill="#C9A15A" />
+    </g>
+  </g>
+</svg>

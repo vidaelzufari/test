@@ -1,0 +1,171 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "history": "Historique",
+    "settings": "Réglages"
+  },
+  "common": {
+    "appName": "The Nursing Queen",
+    "cancel": "Annuler",
+    "save": "Enregistrer",
+    "done": "Terminé",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "add": "Ajouter",
+    "skip": "Pas maintenant",
+    "back": "Retour",
+    "ml": "ml",
+    "oz": "oz",
+    "minutesShort": "{{count}} min",
+    "hoursMinutesShort": "{{hours}} h {{minutes}} min",
+    "hoursShort": "{{count}} h"
+  },
+  "home": {
+    "greeting": "Bonjour, Reine",
+    "startedNursing": "Tétée commencée",
+    "stoppedNursing": "Tétée terminée",
+    "nursingActive": "Tétée en cours…",
+    "nursingActiveSub": "Touchez pour arrêter",
+    "pumped": "Tirage",
+    "bottle": "Biberon",
+    "logCompletedSession": "Enregistrer une séance déjà terminée",
+    "chooseDuration": "Combien de temps a duré la tétée ?",
+    "durationPreset": "{{minutes}} min",
+    "customDuration": "Personnalisé",
+    "whichSide": "Quel côté ?",
+    "sideLeft": "Gauche",
+    "sideRight": "Droit",
+    "sideBoth": "Les deux",
+    "sideSkip": "Passer"
+  },
+  "statusStrip": {
+    "lastFeed": "Dernière tétée",
+    "lastFeedNever": "Aucune tétée enregistrée pour l'instant",
+    "lastSide": "Dernier côté",
+    "sideUnknown": "—",
+    "todayFeeds": "Tétées du jour",
+    "todayPump": "Tiré aujourd'hui",
+    "todayBottle": "Biberon aujourd'hui",
+    "currentStash": "Réserve disponible"
+  },
+  "pumpDetail": {
+    "title": "Ajouter les détails du tirage",
+    "subtitle": "Facultatif — vous pourrez toujours le renseigner plus tard depuis l'Historique.",
+    "leftMl": "Gauche ({{unit}})",
+    "rightMl": "Droit ({{unit}})",
+    "total": "Total : {{amount}}",
+    "dismiss": "Pas maintenant",
+    "save": "Enregistrer les détails"
+  },
+  "bottleEntry": {
+    "title": "Biberon",
+    "amount": "Quantité",
+    "milkType": "Qu'y a-t-il dans le biberon ?",
+    "milkTypeBreastMilk": "Lait maternel",
+    "milkTypeFormula": "Lait infantile",
+    "fromStash": "Depuis la réserve",
+    "save": "Enregistrer le biberon",
+    "skipAmount": "Enregistrer sans quantité"
+  },
+  "history": {
+    "title": "Historique",
+    "empty": "Rien d'enregistré aujourd'hui pour l'instant.",
+    "needsMl": "+ ajouter ml",
+    "nursingTitle": "Tétée",
+    "nursingTitleWithSide": "Tétée · {{side}}",
+    "pumpTitle": "Séance de tirage",
+    "bottleTitleBreastMilk": "Biberon · lait maternel",
+    "bottleTitleFormula": "Biberon · lait infantile",
+    "editEntry": "Modifier l'entrée",
+    "deleteEntry": "Supprimer l'entrée",
+    "deleteConfirmTitle": "Supprimer cette entrée ?",
+    "deleteConfirmBody": "Cette action est irréversible."
+  },
+  "profile": {
+    "title": "Profil du bébé",
+    "addBaby": "Ajouter un bébé",
+    "switchBaby": "Changer de bébé",
+    "name": "Prénom",
+    "dateOfBirth": "Date de naissance",
+    "age": {
+      "weeks_one": "{{count}} semaine",
+      "weeks_other": "{{count}} semaines",
+      "months_one": "{{count}} mois",
+      "months_other": "{{count}} mois"
+    },
+    "photo": "Photo",
+    "choosePhoto": "Choisir dans la photothèque",
+    "takePhoto": "Prendre une photo",
+    "weight": "Poids",
+    "addWeight": "Ajouter une mesure de poids",
+    "weightEmpty": "Aucune mesure de poids pour l'instant.",
+    "privacyNote": "Ce profil reste uniquement sur cet appareil."
+  },
+  "settings": {
+    "title": "Réglages",
+    "appearance": "Apparence",
+    "themeSystem": "Suivre l'appareil",
+    "themeLight": "Clair",
+    "themeDark": "Sombre",
+    "themeNight": "Nuit (très tamisé)",
+    "units": "Unités",
+    "unitsMl": "Millilitres (ml)",
+    "unitsOz": "Onces (oz)",
+    "language": "Langue",
+    "languageSystem": "Suivre l'appareil",
+    "returnToWork": "Date de reprise du travail",
+    "returnToWorkNote": "Utilisée uniquement pour des conseils tout en douceur sur le tirage et la réserve.",
+    "targetStash": "Objectif de réserve ({{unit}})",
+    "queenUnlock": "Queen Unlock",
+    "queenUnlockOwned": "Débloqué — merci !",
+    "restorePurchases": "Restaurer les achats",
+    "about": "À propos",
+    "version": "Version {{version}}"
+  },
+  "recommendations": {
+    "title": "Les conseils de la Reine",
+    "disclaimer": "Conseils généraux basés sur vos propres données, pas un avis médical.",
+    "unlockPrompt": "Débloquez les conseils de la Reine et les prévisions de réserve.",
+    "unlockCta": "Débloquer la Reine",
+    "nextFeed": {
+      "titleWithName": "{{name}} tète généralement vers cette heure-ci",
+      "titleGeneric": "Une tétée est généralement à prévoir vers cette heure-ci",
+      "body": "D'après les tétées récentes, prévoyez-en une entre {{earliest}} et {{latest}}.",
+      "bodyNoData": "Une fois que vous aurez enregistré quelques tétées, ceci suivra le rythme propre à {{name}}."
+    },
+    "pumpSuggestion": {
+      "titleGap": "Un bon moment pour tirer",
+      "bodyGap": "Il y a généralement un intervalle plus long entre les tétées vers {{time}}.",
+      "titleMorning": "Surplus du matin",
+      "bodyMorning": "Vous avez tendance à tirer davantage vers {{time}} — ça vaut le coup d'essayer à ce moment-là.",
+      "titleStashGoal": "Constitution de votre réserve",
+      "bodyStashGoal": "Environ {{amount}} de plus compléteraient votre objectif de réserve avant le {{date}}."
+    },
+    "stash": {
+      "title": "Ce que j'ai en stock",
+      "coverage": "Environ {{days}} jours de couverture selon la consommation habituelle de {{name}}",
+      "coverageUnknown": "Enregistrez encore quelques tétées pour estimer la couverture",
+      "useNext": "Utilisez celui-ci en premier — c'est le plus ancien",
+      "expiringSoon": "Expire bientôt",
+      "expired": "Au-delà de la fenêtre de conservation recommandée",
+      "reasonFridge": "Conseil réfrigérateur : à utiliser dans les 4 jours",
+      "reasonFreezerBest": "Conseil congélateur : idéal sous 6 mois, acceptable jusqu'à 12",
+      "reasonFreezerAcceptable": "Conseil congélateur : au-delà de la fenêtre acceptable de 12 mois",
+      "reasonThawed": "Conseil décongélation : à utiliser dans les 24 heures, ne jamais recongeler",
+      "reasonCounter": "Conseil température ambiante : à utiliser dans les 4 heures",
+      "storageNote": "Conseils généraux de conservation (basés sur les recommandations du CDC) ; les recommandations locales peuvent varier."
+    }
+  },
+  "paywall": {
+    "title": "Débloquer la Reine",
+    "subtitle": "Le journal à quatre boutons, l'historique et le profil sont gratuits pour toujours. Queen Unlock ajoute des conseils personnalisés tout en douceur et des prévisions de réserve.",
+    "priceNote": "Achat unique, valable à vie.",
+    "purchase": "Débloquer maintenant",
+    "restore": "Restaurer les achats",
+    "notNow": "Pas maintenant"
+  },
+  "permissions": {
+    "photoLibrary": "The Nursing Queen conserve la photo de votre bébé uniquement sur cet appareil, pour l'afficher sur son profil.",
+    "camera": "The Nursing Queen n'utilise l'appareil photo que si vous choisissez de prendre une nouvelle photo pour le profil de votre bébé."
+  }
+}

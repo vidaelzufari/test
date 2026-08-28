@@ -1,0 +1,36 @@
+# User story: edit history — log a bottle entry, open it from History, change
+# its ml amount, save, and confirm the updated value shows in the row.
+appId: com.nursingqueen.app
+---
+- launchApp
+- tapOn:
+    id: "home-button-bottle"
+- assertVisible:
+    id: "bottle-entry-amount-input"
+- tapOn:
+    id: "bottle-entry-amount-input"
+- inputText: "120"
+- tapOn:
+    id: "bottle-entry-type-breast-milk"
+- tapOn:
+    id: "bottle-entry-save"
+- tapOn:
+    id: "nav-history"
+- assertVisible:
+    id: "history-entry-row-0"
+- tapOn:
+    id: "history-entry-row-0"
+- assertVisible:
+    id: "entry-edit-field-ml"
+- tapOn:
+    id: "entry-edit-field-ml"
+- eraseText
+- inputText: "150"
+- tapOn:
+    id: "entry-edit-save"
+- tapOn:
+    id: "nav-history"
+- assertVisible:
+    id: "history-entry-row-0"
+- assertVisible:
+    text: "150"

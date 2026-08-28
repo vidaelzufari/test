@@ -1,0 +1,33 @@
+# User story: log pump + add ml later — start a pump session, skip entering
+# the amount, confirm History flags it as needing detail, then fill in the
+# ml amount from the entry-edit screen and confirm the flag clears.
+appId: com.nursingqueen.app
+---
+- launchApp
+- tapOn:
+    id: "home-button-pump"
+- assertVisible:
+    id: "pump-detail-dismiss"
+- tapOn:
+    id: "pump-detail-dismiss"
+- tapOn:
+    id: "nav-history"
+- assertVisible:
+    id: "history-entry-row-0"
+- assertVisible:
+    id: "history-needs-detail-badge"
+- tapOn:
+    id: "history-entry-row-0"
+- assertVisible:
+    id: "entry-edit-field-ml"
+- tapOn:
+    id: "entry-edit-field-ml"
+- inputText: "90"
+- tapOn:
+    id: "entry-edit-save"
+- tapOn:
+    id: "nav-history"
+- assertVisible:
+    id: "history-entry-row-0"
+- assertNotVisible:
+    id: "history-needs-detail-badge"
