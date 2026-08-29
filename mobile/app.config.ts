@@ -1,16 +1,15 @@
 import type { ExpoConfig, ConfigContext } from "expo/config";
-import {
-  APP_NAME,
-  APP_SLUG,
-  APP_SCHEME,
-  IOS_BUNDLE_ID,
-  ANDROID_PACKAGE,
-} from "./src/config/app";
+import appConfig from "./src/config/app.json";
+
+const { APP_NAME, APP_SLUG, APP_SCHEME, IOS_BUNDLE_ID, ANDROID_PACKAGE } = appConfig;
 
 /**
  * All native identity (name, bundle id, scheme) is derived from the single
- * config constant in src/config/app.ts so there is exactly one place to
- * rename the product.
+ * config constant in src/config/app.json so there is exactly one place to
+ * rename the product. Imported as JSON here (not from src/config/app.ts)
+ * because Node's config-loading step for app.config.ts cannot reliably
+ * resolve a nested `.ts` import across Expo CLI/Node versions — see the
+ * comment in src/config/app.ts for the full story.
  */
 export default ({ config }: ConfigContext): ExpoConfig => ({
   ...config,

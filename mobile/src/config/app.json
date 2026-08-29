@@ -1,0 +1,10 @@
+{
+  "APP_NAME": "The Nursing Queen",
+  "APP_SHORT_NAME": "Nursing Queen",
+  "APP_SLUG": "the-nursing-queen",
+  "APP_SCHEME": "nursingqueen",
+  "IOS_BUNDLE_ID": "com.nursingqueen.app",
+  "ANDROID_PACKAGE": "com.nursingqueen.app",
+  "QUEEN_UNLOCK_ENTITLEMENT_ID": "queen_unlock",
+  "QUEEN_UNLOCK_PRODUCT_ID": "queen_unlock_lifetime"
+}
