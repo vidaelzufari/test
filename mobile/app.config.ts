@@ -1,16 +1,22 @@
 import type { ExpoConfig, ConfigContext } from "expo/config";
-import appConfig from "./src/config/app.json";
-
-const { APP_NAME, APP_SLUG, APP_SCHEME, IOS_BUNDLE_ID, ANDROID_PACKAGE } = appConfig;
 
 /**
- * All native identity (name, bundle id, scheme) is derived from the single
- * config constant in src/config/app.json so there is exactly one place to
- * rename the product. Imported as JSON here (not from src/config/app.ts)
- * because Node's config-loading step for app.config.ts cannot reliably
- * resolve a nested `.ts` import across Expo CLI/Node versions — see the
- * comment in src/config/app.ts for the full story.
+ * These five values are intentionally literal, not imported from
+ * src/config/app.json (the single source of truth every app screen reads).
+ * Node's config-loading step for app.config.ts has proven unable to reliably
+ * resolve *any* cross-file import for these values across different Expo
+ * CLI/Node/build-image combinations — a plain `.ts` import failed with
+ * "Cannot use import statement outside a module", and a `.json` import
+ * failed with 'needs an import attribute of "type: json"' on a newer image.
+ * A self-contained app.config.ts has no such failure mode. Drift between
+ * these literals and src/config/app.json is caught by
+ * __tests__/appConfig.test.ts, not by a runtime import.
  */
+const APP_NAME = "The Nursing Queen";
+const APP_SLUG = "the-nursing-queen";
+const APP_SCHEME = "nursingqueen";
+const IOS_BUNDLE_ID = "com.nursingqueen.app";
+const ANDROID_PACKAGE = "com.nursingqueen.app";
 export default ({ config }: ConfigContext): ExpoConfig => ({
   ...config,
   name: APP_NAME,
