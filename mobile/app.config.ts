@@ -78,7 +78,11 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
   },
   plugins: [
     "expo-router",
-    "expo-sqlite",
+    // expo-sqlite is intentionally NOT listed here: it has no config plugin
+    // (no app.plugin.js) and autolinks natively without one. Listing it
+    // makes Expo's resolver import the package to probe whether its main
+    // export happens to be a plugin, which trips an internal ESM-resolution
+    // bug in this expo-sqlite version and fails the whole config read.
     "expo-updates",
     // expo-image-picker's own plugin is intentionally given no
     // photosPermission/cameraPermission options: passing literal text there
